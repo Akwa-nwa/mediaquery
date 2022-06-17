@@ -1,0 +1,138 @@
+:root {
+  --background-color: hsl(0, 100%, 74%);
+  --color: white;
+  --height: 100vh;
+  /* --margin: 30px; */
+  --padding: 2em;
+  --background-image: url(bg-intro-desktop.png);
+  --border-radius: 5px;
+  --font-size: 16px;
+  --font-family: "Poppins", cursive;
+  --font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+}
+main {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  color: var(--color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  margin-top: 40px;
+}
+h1 {
+  padding-left: 2em;
+  padding-bottom: 1em;
+  font-size: 40px;
+}
+.p1 {
+  padding-left: 5em;
+}
+input {
+  margin-bottom: 30px;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: var(--border-radius);
+  border-color: lightgray;
+  border-style: solid;
+}
+.container1 {
+  padding: var(--padding);
+}
+.container2 {
+  /* padding: 2em; */
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b";
+  gap: 20px;
+  width: 80%;
+  text-align: center;
+  padding-right: 7em;
+}
+.c2div1 {
+  background-color: hsl(248, 32%, 49%);
+  grid-area: a;
+  padding: 1em;
+  border-radius: var(--border-radius);
+}
+.c2div2 {
+  background-color: white;
+  grid-area: b;
+  padding: 1em;
+  border-radius: var(--border-radius);
+}
+.button {
+  background-color: hsl(154, 59%, 51%);
+  margin-bottom: 20px;
+  width: 84%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--color);
+  border-color: hsl(154, 59%, 51%);
+  border-style: solid;
+}
+button:hover {
+  background-color: greenyellow;
+  color: black;
+}
+.p2 {
+  font-size: 10px;
+  color: gray;
+}
+.span1 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.span2 {
+  color: var(--background-color);
+  font-weight: bolder;
+}
+hr {
+  background-color: none;
+  border-style: none;
+  border-top: dotted;
+  border-color: skyblue;
+  border-width: 10px;
+  height: 0px;
+  width: 100px;
+}
+.name {
+  margin-left: 10px;
+  margin-right: -10px;
+}
+.psw {
+  margin-right: -10px;
+  margin-left: 10px;
+}
+@media all and (min-width: 0px) and (max-width: 992px) {
+  main {
+    display: block;
+    width: 100%;
+  }
+  body {
+    background-image: url(bg-intro-mobile.png);
+    background-color: var(--background-color);
+  }
+  .container2 {
+    width: 100%;
+    margin-left: 80px;
+  }
+}
